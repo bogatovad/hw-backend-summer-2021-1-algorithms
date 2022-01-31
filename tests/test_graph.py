@@ -128,7 +128,7 @@ class TestBFS:
         b.point_to(c)
         a.point_to(c)
         g = Graph(a)
-
+        print(a.outbound)
         assert bfs_values(g) == ['a', 'b', 'c']
 
     def test_bfs_2(self):
@@ -175,6 +175,10 @@ class TestBFS:
         b.point_to(d)
         b.point_to(f)
         c.point_to(e)
+        print('A', a, a.outbound)
+        print('A', b, b.outbound)
+        print('A', c, c.outbound)
+        print('A', e, e.outbound)
 
         g = Graph(a)
 
