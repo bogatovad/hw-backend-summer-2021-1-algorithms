@@ -1,4 +1,3 @@
-from tkinter import N, W
 from typing import Optional
 
 __all__ = (
