@@ -1,5 +1,4 @@
 from collections import deque
-from tkinter import N
 from typing import Any
 
 __all__ = (

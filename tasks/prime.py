@@ -19,17 +19,3 @@ def is_prime(number: int) -> bool:
     while d * d <= number and number % d != 0:
         d += 2
     return d * d > number
-
-# a = [(1, False),
-#     (0, False),
-#     (2, True),
-#     (3, True),
-#     (4, False),
-#     (5, True),
-#     (113, True),
-#     (199, True),
-#     (1999, True),
-#     (2000, False)]
-
-# for i in a:
-#     print(is_prime(i[0]))
