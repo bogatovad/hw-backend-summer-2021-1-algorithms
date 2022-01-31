@@ -12,6 +12,6 @@ def find_shortest_longest_word(text: str) -> tuple[Optional[str], Optional[str]]
     Если такого слова нет - вернуть None
     """
     words = sorted([(len(item), item)for item in text.split()])
-    if not len(words): 
+    if not len(words):
         return (None, None)
     return words[0][1], words[-1][1]

@@ -14,7 +14,7 @@ def even_odd(arr: list[int]) -> float:
 
     a = sum([item for item in arr if item % 2 == 1])
 
-    if a == 0:
-       return 0
+    if not a:
+        return 0
     else:
         return sum([item for item in arr if item % 2 == 0]) / a

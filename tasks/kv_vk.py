@@ -23,7 +23,7 @@ def flip_kv_vk(d: dict[KT, KV]) -> dict[KV, KT]:
         'Москва': 'moscow',
     }
     """
-    res:dict[KV, KT] = {}
+    res: dict[KV, KT] = {}
     for key, value in d.items():
         res[value] = key
     return res
@@ -42,7 +42,7 @@ def flip_kv_vk_safe(d: dict[KT, KV]) -> dict[KV, list[KT]]:
         '+3': ['Москва', 'Санкт-Петербург'],
     }
     """
-    res:dict[KV, list[KT]] = {}
+    res: dict[KV, list[KT]] = {}
     for key, value in d.items():
         if value in res:
             res[value].append(key)
@@ -50,4 +50,3 @@ def flip_kv_vk_safe(d: dict[KT, KV]) -> dict[KV, list[KT]]:
             res[value] = []
             res[value].append(key)
     return res
-
